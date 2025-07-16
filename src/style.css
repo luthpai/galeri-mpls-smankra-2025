@@ -1,0 +1,54 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.image {
+    transition: 0.3s;
+}
+
+.image:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #cccccc, white);
+}
+
+.title h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#logo {
+    width: 120px;
+}
+
+#masonry {
+    padding: 15px;
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#footer h1 {
+    opacity: 50%;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 15px;
+}
