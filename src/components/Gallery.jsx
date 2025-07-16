@@ -2,6 +2,18 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import { useState } from "react"
 import { Lightbox } from 'yet-another-react-lightbox'
 import "yet-another-react-lightbox/styles.css";
+import {
+    Captions,
+    Counter,
+    Download,
+    Fullscreen,
+    Inline,
+    Share,
+    Slideshow,
+    Thumbnails,
+    Video,
+    Zoom
+  } from "yet-another-react-lightbox/plugins";  
 
 import img1 from "../assets/1.jpg"
 import img2 from "../assets/2.jpg"
@@ -55,6 +67,7 @@ const Gallery = () => {
             on={{
                 view: ({ index }) => setPhotoIndex(index)
             }}
+            plugins={[Zoom, Share, Fullscreen, Download]}
         />
         </div>
     )
